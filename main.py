@@ -36,9 +36,9 @@ def init_db():
         if result.scalar() == 0:
             conn.execute(text("""
                 INSERT INTO estudiantes (nombre, edad, grado) VALUES 
-                ('Ana García', 15, '3ro ESO'),
-                ('Carlos López', 16, '4to ESO'),
-                ('María Rodríguez', 17, '1ro Bachillerato')
+                ('Ana García', 15, 'Once'),
+                ('Carlos López', 16, 'Decimo'),
+                ('María Rodríguez', 17, 'Once')
             """))
         conn.commit()
 
